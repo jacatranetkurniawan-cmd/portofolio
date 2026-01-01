@@ -170,6 +170,49 @@ footer {
   z-index: 1;
 }
 
+  /* HERO SECTION */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("assets/image/bg1 .JPG"); /* ganti sesuai nama file */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LAYER GELAP AGAR TULISAN JELAS */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* ISI TULISAN */
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+/* TEKS */
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content h2 {
+  font-size: 42px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  letter-spacing: 2px;
+  font-size: 14px;
+}
 /* TEXT */
 .hero-content {
   position: relative;
@@ -195,5 +238,7 @@ footer {
   margin-top: 15px;
   letter-spacing: 3px;
 }
+
+  
 
 }
