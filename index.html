@@ -4,39 +4,51 @@
   <meta charset="UTF-8">
   <title>Kurniawan Sumiarta | Sport Photographer</title>
   <link rel="stylesheet" href="style.css">
-</head>
-  <script>
-function showCategory(category) {
-  const categories = document.querySelectorAll('.category');
-  categories.forEach(cat => cat.classList.remove('active'));
 
-  document.querySelector('.' + category).classList.add('active');
-}
-</script>
-<body>  
+  <script>
+    function showCategory(category) {
+      const categories = document.querySelectorAll('.category');
+      categories.forEach(cat => cat.classList.remove('active'));
+
+      const target = document.querySelector('.' + category);
+      if (target) {
+        target.classList.add('active');
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</head>
+
+<body>
 <header class="header">
-  <div class="logo">KURNIAWAN SUMIARTA<br><span> Sport Photographer</span></div>
+  <div class="logo">
+    KURNIAWAN SUMIARTA<br>
+    <span>Sport Photographer</span>
+  </div>
+
   <nav class="menu">
-  <a href="#home">Home</a>
+    <a href="#home">Home</a>
+
     <div class="dropdown">
-    <a href="#portfolio" class="dropbtn">Portfolio</a>
-    <div class="dropdown-content">
-      <a onclick="showCategory('sepakbola')">Sepak Bola</a>
-      <a onclick="showCategory('hockey')">Hockey</a>
-      <a onclick="showCategory('futsal')">Futsal</a>
-      <a onclick="showCategory('basket')">Basket</a>
-      <a onclick="showCategory('padel')">Padel</a>
-      <a onclick="showCategory('golf')">Golf</a>
-      <a onclick="showCategory('event')">Event</a>
-      <a onclick="showCategory('wedding')">Wedding</a>
+      <a href="#portfolio" class="dropbtn">Portfolio</a>
+      <div class="dropdown-content">
+        <a onclick="showCategory('sepakbola')">Sepak Bola</a>
+        <a onclick="showCategory('hockey')">Hockey</a>
+        <a onclick="showCategory('futsal')">Futsal</a>
+        <a onclick="showCategory('basket')">Basket</a>
+        <a onclick="showCategory('padel')">Padel</a>
+        <a onclick="showCategory('golf')">Golf</a>
+        <a onclick="showCategory('event')">Event</a>
+        <a onclick="showCategory('wedding')">Wedding</a>
+      </div>
     </div>
 
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-  <a class="booking" href="https://wa.me/6281259552868" target="_blank">Booking</a>
-</nav>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a class="booking" href="https://wa.me/6281259552868" target="_blank">Booking</a>
   </nav>
 </header>
+
 
 <section class="hero">
   <div class="slides">
@@ -51,20 +63,28 @@ function showCategory(category) {
   </div>
 </section>
 
-<section id="portfolio" class="gallery">
-  <img src="assets/images/1.JPG">
-  <img src="assets/images/bola 12.JPG">
-  <img src="assets/images/bola 2.JPG">
-  <img src="assets/images/bola 7.JPG">
-  <img src="assets/images/bola 3.JPG">
-  <img src="assets/images/bola 16.JPG">
-  <img src="assets/images/bg1.JPG">
-  <img src="assets/images/bg2.JPG">
-  <img src="assets/images/bg3.JPG
-  <img src="assets/images/hockey 1.JPG">
-  <img src="assets/images/hockey 2.JPG">
-  <img src="assets/images/hockey 3.JPG">
+<section id="portfolio">
+
+  <div class="gallery category sepakbola active">
+    <img src="assets/images/bola1.JPG">
+    <img src="assets/images/bola2.JPG">
+    <img src="assets/images/bola3.JPG">
+    <img src="assets/images/bola4.JPG">
+    <img src="assets/images/bola5.JPG">
+    <img src="assets/images/bola6.JPG">
+  </div>
+
+  <div class="gallery category hockey">
+    <img src="assets/images/hockey1.JPG">
+    <img src="assets/images/hockey2.JPG">
+    <img src="assets/images/hockey3.JPG">
+    <img src="assets/images/bg1.JPG">
+    <img src="assets/images/bg2.JPG">
+    <img src="assets/images/bola11 .JPG">
+  </div>
+
 </section>
+
 
 <section id="about" class="about">
   <div class="about-img">
