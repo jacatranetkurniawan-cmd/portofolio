@@ -174,7 +174,7 @@ footer {
 .hero {
   position: relative;
   height: 100vh;
-  background-image: url("assets/image/bg1 .JPG"); /* ganti sesuai nama file */
+  background-image: url("assets/image/bg1.JPG"); /* ganti sesuai nama file */
   background-size: cover;
   background-position: center;
   display: flex;
